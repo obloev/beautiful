@@ -6,7 +6,8 @@ ADMIN = 880280670
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token=API_TOKEN)
+proxy_url = 'http://proxy.server:3128'
+bot = Bot(token=TOKEN, proxy=proxy_url)
 dp = Dispatcher(bot)
 
 l = [
